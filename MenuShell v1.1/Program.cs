@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
+using MenuShell_v1._1.View;
 
 namespace MenuShell_v1._1
 {
@@ -10,6 +8,10 @@ namespace MenuShell_v1._1
     {
         static void Main(string[] args)
         {
+            var login = new LoginView("Login");
+            login.Display();
+
+            Console.ReadKey();
         }
     }
 }
