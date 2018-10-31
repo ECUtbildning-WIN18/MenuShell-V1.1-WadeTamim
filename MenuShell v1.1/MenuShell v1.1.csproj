@@ -50,7 +50,6 @@
     <Compile Include="Domain\Services\CheckRole.cs" />
     <Compile Include="Domain\Services\DeleteUser.cs" />
     <Compile Include="Domain\Services\IUserLoader.cs" />
-    <Compile Include="Domain\Services\ListUsers.cs" />
     <Compile Include="Domain\Services\SearchUser.cs" />
     <Compile Include="Domain\Services\UserLoader.cs" />
     <Compile Include="Domain\User.cs" />
@@ -59,6 +58,7 @@
     <Compile Include="View\AddUserView.cs" />
     <Compile Include="View\AdministratorView.cs" />
     <Compile Include="View\BaseView.cs" />
+    <Compile Include="View\DeleteView.cs" />
     <Compile Include="View\LoginView.cs" />
     <Compile Include="View\ManageView.cs" />
     <Compile Include="View\SearchUserView.cs" />

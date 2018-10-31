@@ -38,6 +38,11 @@ namespace MenuShell_v1._1.View
                     search.Display();
                     break;
 
+                case ConsoleKey.Escape:
+                    var admin = new AdministratorView("Admin");
+                    admin.Display();
+                    break;
+
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nThe options are 1 or 2 .");

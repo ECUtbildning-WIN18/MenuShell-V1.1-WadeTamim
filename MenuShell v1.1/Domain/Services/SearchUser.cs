@@ -14,21 +14,20 @@ namespace MenuShell_v1._1.Domain.Services
         {
             _userLoader = new UserLoader();
         }
-        public List<User> Search(string username)
+        public Dictionary<string,User> Search(string username)
         {
-            var backUsers= new List<string>();
+            var backUsers= new Dictionary<string,User>();
             var users = _userLoader.LoadUsers();
 
-            foreach (var name in users.Keys)
+            foreach (var name in users.Values)
             {
-                if (name.Contains(username))
+                if (name.Username.Contains(username))
                 {
-                    backUsers.Add(users.ToString());
+                   backUsers.Add(name.Username,new User(name.Username,name.Password,name.UserRole));
                 }
             }
 
-            return null;
+            return backUsers;
         }
-        //contain
     }
 }
